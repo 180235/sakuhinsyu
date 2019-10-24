@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>作品集</title>
+<link href="/jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="/jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="/jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<link href="/jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
+<link href="/css/style.css" rel="stylesheet" type="text/css">
+<script src="/jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="/jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+<script src="/jQueryAssets/jquery.ui-1.10.4.accordion.min.js"></script>
+</head>
+
+<body>
+	
+	<h1>作品集</h1>
+<p>中山叡璽の作品集</p>
+<div id="Tabs1">
+  <ul>
+    <li><a href="#tabs-1">作品1</a></li>
+    <li><a href="#tabs-2">作品2</a></li>
+    <li><a href="#tabs-3">作品3</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>デッサン1</p>
+  <img src="image/design1.jpg" alt="" width="1000"/> </div>
+  <div id="tabs-2">
+    <p>デッサン2</p>
+  <img src="image/design02.jpg" width="1154" height="736" alt=""/> </div>
+  <div id="tabs-3">
+    <p>デッサン3</p>
+  <img src="image/design04.jpg" alt="" width="1000"/> </div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+    </script>
+	
+<p>これは、作品集の続きです</p>
+<div id="Accordion1">
+  <h3><a href="#">デッサン</a></h3>
+  <div>
+    <p>瓶と桶</p>
+  <img src="image/design03.jpg" width="1000" height="689" alt=""/> </div>
+  <h3><a href="#">３Dモデル</a></h3>
+  <div>
+    <p>小屋</p>
+  <img src="image/小屋.png" width="1000" height="1403" alt=""/> </div>
+  <h3><a href="#">テクスチャ</a></h3>
+  <div>
+    <p>小屋　テクスチャ</p>
+  <img src="image/小屋　テクスチャ.png" width="1024" height="1024" alt=""/> </div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Accordion1" ).accordion(); 
+});
+    </script>
+</body>
+</html>
